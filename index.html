@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="un">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +9,47 @@
 </head>
 <body>
     <!-- Logo -->
-    <header>
-        <img src="img/Logo.png" alt="Logo">
+    <header class="bg-color">
+        <img src="img/logo-copia.png" alt="Logo">
         <span id="logo">Toboolist</span>
     </header>
 
-    <main>
+    <main class="bg-color">
         <!-- Navigazione -->
         <nav>
             <span id="add-task" class="add">Add Task</span>
             <span id="add-section" class="add">Add Section</span>
         </nav>
         
-        <!-- New Task -->
-        <section></section>
-        
-        <!-- Today -->
-        <section></section>
+        <!-- Liste -->
+        <ul>
+            <li id="new-task" class="section"><span class="symbol-section">&#9660;</span> New Task
+                <ul class="phrase">
+                    <li><span class="check-mark check">&#x2714;</span>Quarterly Newsletter <span class="topic topic-blue">Editorial</span></li>
+                </ul>
+            </li>
 
-        <!-- Upcoming -->
-        <section></section>
+
+            <li class="section"><span class="symbol-section">&#9660;</span> Today
+                <ul class="phrase">
+                    <li><span class="check-mark check">&#x2714;</span>Recruiting blog post <span class="topic topic-blue">Editorial</span></li>
+                    <li><span class="check-mark check">&#x2714;</span>Mobile app luaunch <span id="topic-purple" class="topic">Q1 Goals</span></li>
+                    <li><span class="cross-mark check">&#x2716;</span>Interview John H. <span id="topic-green" class="topic">Recruiting</span></li>
+                    <li><span class="check-mark check">&#x2714;</span>Summit update to mobile storefronts <span id="topic-orange" class="topic">Mobile</span></li>
+                </ul>
+            </li>
+
+
+            <li class="section"><span class="symbol-section">&#9660;</span> Upcoming
+                <ul class="phrase">
+                    <li><span class="cross-mark check">&#x2716;</span>Schedule meeting with Alex</li>
+                    <li><span class="check-mark check">&#x2714;</span>Homepage refresh <span id="topic-pink" class="topic">Website</span></li>
+                    <li><span class="check-mark check">&#x2714;</span>Onboard new Sales team members <span id="topic-yellowgreen" class="topic">Sales</span></li>
+                    <li><span class="check-mark check">&#x2714;</span>Review editorial calendar <span class="topic topic-blue">Editorial</span></li>
+                </ul>
+            </li>
+        </ul>
+        
     </main>
-    
 </body>
 </html>
